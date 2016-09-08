@@ -29,6 +29,25 @@ describe 'Methods' do
    it "should return string where not is already at beginning" do
      not_string("not yet").must_equal("not yet")
    end
-
  end
+
+ describe 'icy_hot?' do
+
+   it "is true if a is icy and b is hot" do
+     icy_hot?(0, 100).must_equal(true)
+   end
+   it "is true if a is icy and b is hot" do
+     icy_hot?(-10, 111).must_equal(true)
+   end
+   it "is true if a is hot and b is icy" do
+     icy_hot?(112, -100).must_equal(true)
+   end
+   it "is false if one is hot and other is normal" do
+     icy_hot?(312, 88).must_equal(false)
+   end
+   it "is false if one is icy and other is normal" do
+     icy_hot?(32, -42).must_equal(false)
+   end
+ end
+
 end
