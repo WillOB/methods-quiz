@@ -19,8 +19,7 @@ describe 'Methods' do
    it "should return false if none are teens" do
      has_teen?(2, 34, 52).must_equal(false)
    end
-
- end
+  end
 
  describe 'not_string' do
 
