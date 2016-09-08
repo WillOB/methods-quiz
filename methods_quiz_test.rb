@@ -75,7 +75,7 @@ describe 'Methods' do
      two_as_one?(33, 17, 16).must_equal(true)
    end
    it "is false if none add up to the third" do
-     two_as_one?(3, 2, 82).must_equal(true)
+     two_as_one?(3, 2, 82).must_equal(false)
    end
    it "works with negative numbers" do
      two_as_one?(-3, -1, -4).must_equal(true)

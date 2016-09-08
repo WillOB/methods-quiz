@@ -16,21 +16,24 @@ def not_string(str)
 end
 
 # TODO - write icy_hot?
-
 def icy_hot?(a, b)
 	(a <= 0 && b >= 100) || (b <= 0 && a >= 100)
 end
+
 # TODO - write closer_to
 def closer_to(a, b, c)
-if (a - b).abs < (a - c).abs
-	return b
-elsif b == c
-	return 0
-else
-	return c
-end
+	if (a - b).abs < (a - c).abs
+		return b
+	elsif b == c
+		return 0
+	else
+		return c
+	end
 end
 
 # TODO - write two_as_one?
+ def two_as_one?(a, b, c)
+	 a + b == c || b + c == a || a + c == b
+ end
 
 # TODO - write pig_latinify
