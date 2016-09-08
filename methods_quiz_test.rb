@@ -3,7 +3,7 @@ require './methods_quiz'
 
 # TODO - write tests here
 
-method do
+describe 'Methods' do
 
  describe 'has_teen?' do
 
@@ -22,6 +22,14 @@ method do
 
  end
 
+ describe 'not_string' do
 
+   it "should add not to beginning of string" do
+     not_string('thomas').must_equal("not thomas")
+   end
+   it "should return string where not is already at beginning" do
+     not_string("not yet").must_equal("not yet")
+   end
 
+ end
 end
