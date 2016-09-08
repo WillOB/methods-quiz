@@ -37,3 +37,11 @@ end
  end
 
 # TODO - write pig_latinify
+#def pig_latinify(eng)
+#	vowel = 'a', 'e', 'i', 'o', 'u'
+#	if eng.start_with?(vowel)
+#		return eng + 'way'
+#	else
+#		return eng[2..-1] + eng[1] + 'ay'
+#	end
+#end

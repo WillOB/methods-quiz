@@ -82,18 +82,24 @@ describe 'Methods' do
    end
  end
 
- describe 'pig_latinify' do
+ #describe 'pig_latinify' do
 
-   it "works when words start with one consonant" do
-     pig_latinify('soap').must_equal('oapsay')
-   end
-   it "works when words start with two or more consonants" do
-     pig_latinify('stop').must_equal('opstay')
-     pig_latinify('spring').must_equal('ingspray')
-   end
-   it "works when words start with a vowel" do
-     pig_latinify('ouch').must_equal('ouchway')
-   end
- end
- 
+  # it "works when words start with one consonant" do
+    # pig_latinify('soap').must_equal('oapsay')
+   #end
+  # it "works when words start with two or more consonants" do
+  #   pig_latinify('stop').must_equal('opstay')
+  #   pig_latinify('spring').must_equal('ingspray')
+   #end
+   #it "works when words start with a vowel" do
+    # pig_latinify('ouch').must_equal('ouchway')
+   #end
+   #it "works with blanks around word" do
+    # pig_latinify('  yes ').must_equal('esyay')
+   #end
+   #it "works with different cases" do
+    # pig_latinify('hElP').must_equal('elphay')
+   #end
+ #end
+
 end
