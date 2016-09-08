@@ -82,4 +82,18 @@ describe 'Methods' do
    end
  end
 
+ describe 'pig_latinify' do
+
+   it "works when words start with one consonant" do
+     pig_latinify('soap').must_equal('oapsay')
+   end
+   it "works when words start with two or more consonants" do
+     pig_latinify('stop').must_equal('opstay')
+     pig_latinify('spring').must_equal('ingspray')
+   end
+   it "works when words start with a vowel" do
+     pig_latinify('ouch').must_equal('ouchway')
+   end
+ end
+ 
 end
