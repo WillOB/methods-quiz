@@ -50,4 +50,20 @@ describe 'Methods' do
    end
  end
 
+ describe 'closer_to' do
+
+   it "returns closer guess" do
+     closer_to(2, 3, 5).must_equal(3)
+   end
+   it "returns closer guess when one is correct" do
+     closer_to(15, 15, 2).must_equal(15)
+   end
+   it "returns zero when guesses are same" do
+     closer_to(11, 3, 3).must_equal(0)
+   end
+   it "returns closer guess with one negative number" do
+     closer_to(10, -1 , 112).must_equal(-1)
+   end
+ end
+
 end
