@@ -66,4 +66,20 @@ describe 'Methods' do
    end
  end
 
+ describe 'two_as_one?' do
+
+   it "returns true if two add up to the other" do
+     two_as_one?(1, 2, 3).must_equal(true)
+   end
+   it "returns true if two add up to the other" do
+     two_as_one?(33, 17, 16).must_equal(true)
+   end
+   it "is false if none add up to the third" do
+     two_as_one?(3, 2, 82).must_equal(true)
+   end
+   it "works with negative numbers" do
+     two_as_one?(-3, -1, -4).must_equal(true)
+   end
+ end
+
 end
